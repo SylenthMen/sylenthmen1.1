@@ -174,12 +174,13 @@ section {
     margin: 20px;
     border: 15px solid #fff;        /*MODIFICACION FUTURA DE COLOR*/
     box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+    border-radius: 15px;
 }
 
 .musica .content .box .imgBx {
     position: relative;
     width: 100%;
-    height: 300px;    
+    height: 300px; 
 }
 
 .musica .content .box .imgBx img {
@@ -189,6 +190,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .musica .content .box .text {
@@ -212,6 +214,10 @@ section {
 .sello .content .box {
     width: 250px;
     margin: 15px;
+    background: rgb(103,0,218);
+    background: linear-gradient(90deg, rgba(103,0,218,1) 0%, rgba(121,9,68,1) 42%, rgba(255,0,125,1) 100%);
+    border: 10px solid #000000;
+    border-radius: 15px;
 }
 
 .sello .content .box .imgBx {
@@ -227,6 +233,15 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sello .content .box .imgBx:hover img{
+    padding: 30px;
+    border-radius: 15px;
 }
 
 .sello .content .box .text {
@@ -267,6 +282,13 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.2s;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.gaming .content .box .imgBx:hover img {
+    padding-top: 80px;
 }
 
 .gaming .content .box .text {
@@ -277,6 +299,58 @@ section {
 .gaming .content .box .text h3 {
     font-weight: 100;
     color: #ff0157;
+}
+
+.subsenl{
+    text-decoration: none;
+}
+
+.enlaces{
+    color: #5a01ff;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.2s;
+}
+
+.enlaces:hover {
+    background-color: rgb(160, 5, 221);
+    padding: 12px 12px 12px 12px;
+    border-radius: 10px;
+    margin: 5px;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.enlacestt {
+    color: #000000;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.2s;
+}
+
+.enlacestt:hover {
+    background: linear-gradient(143deg, rgba(0,218,186,1) 0%, rgba(9,60,121,1) 57%, rgba(255,0,69,1) 100%);
+    padding: 12px 12px 12px 12px;
+    border-radius: 10px;
+    margin: 5px;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.enlacesyt {
+    color: #ff0101;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.2s;
+}
+
+.enlacesyt:hover {
+    background: #ff0101;
+    padding: 12px 12px 12px 12px;
+    border-radius: 10px;
+    margin: 5px;
+    color: #fff;
+    transition: 0.2s;
 }
 
 /*FIN DE LA SECCION GAMING */
