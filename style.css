@@ -44,7 +44,7 @@ p {
 .btn {
     font-size: 1em;
     color: #fff;
-    background: #ff0157;
+    background: #4d01ff;
     display: inline-block;
     padding: 10px 30px;
     margin-top: 20px;
@@ -52,6 +52,7 @@ p {
     text-decoration: none;
     letter-spacing: 2px;
     transition: 0.5s;
+    border-radius: 15px;
 }
 
 .btn:hover {
@@ -236,6 +237,46 @@ section {
 }
 
 .sello .content .box .text h3 {
+    font-weight: 100;
+    color: #ff0157;
+}
+
+/* seccion gaming*/
+
+.gaming .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.gaming .content .box {
+    width: 250px;
+    margin: 15px;
+}
+
+.gaming .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.gaming .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gaming .content .box .text {
+    position: relative;
+    padding: 15px 0 5px;
+}
+
+.gaming .content .box .text h3 {
     font-weight: 100;
     color: #ff0157;
 }
