@@ -15,23 +15,41 @@ body {
 }
 
 header {
-    background-color: #3498db;
+    background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
-button {
+a {
+    text-decoration: none;
+    color: #fff;
     padding: 10px;
     font-size: 16px;
-    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #ff00aa;
+}
+
+button {
+    padding-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff00aa;
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: .2s;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #7a0052;
 }
 
 .post {
@@ -40,7 +58,7 @@ button:hover {
 }
 
 .post h2 {
-    color: #3498db;
+    color: #ff00aa;
     font-size: 2rem;
 }
 
