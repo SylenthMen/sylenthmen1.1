@@ -41,18 +41,21 @@ button:hover {
 
 .post h2 {
     color: #3498db;
+    font-size: 2rem;
 }
 
 .post p {
     text-align: left;
     padding-top: 10px;
+    font-size: 1.3rem;
 }
 
-img{
-    padding-top: 20px;
-    justify-content: center;
-    align-items: center;
-    width: 750px;
+.post img.centered-image {
+    padding-top: 15px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor padre */
+    height: auto; /* Hace que la imagen sea responsive */
 }
 
 
