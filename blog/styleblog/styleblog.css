@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+* { 
+    font-family: 'Montserrat Alternates', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.post {
+    margin: 20px;
+    text-align: center;
+}
+
+.post h2 {
+    color: #3498db;
+}
+
+.post p {
+    text-align: left;
+    padding-top: 10px;
+}
+
+img{
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+}
+
+
+/*ESTILOS DEL MODO OSCURO*/
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
