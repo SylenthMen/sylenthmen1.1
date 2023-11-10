@@ -42,13 +42,13 @@ p {
 .btn {
     font-size: 1em;
     color: #fff;
-    background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%);
+    background-color: #40E0D085;
     display: inline-block;
     padding: 10px 30px;
     margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
     transition: 0.5s;
     border-radius: 15px;
 }

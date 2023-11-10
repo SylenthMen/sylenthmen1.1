@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error 404</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        color: white;
+        font-family: Arial, sans-serif;
+        overflow: hidden; /* Para ocultar cualquier desbordamiento del gradiente */
+        background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+        background-size: 200% 200%;
+        animation: changeColor 5s linear infinite;
+      }
+
+      .error-container {
+        text-align: center;
+      }
+
+      .error-message {
+        font-size: 3em;
+        margin: 0;
+        padding-bottom: 15px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+        padding: 10px;
+        background-color: #000;
+        border-radius: 15px;
+        transition: 0.3s;
+      }
+      a:hover {
+        background-color: #fff;
+        color: #000;
+        transition: 0.3s;
+      }
+
+      @keyframes changeColor {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+      <h1 class="error-message">Error 404 - Página no encontrada</h1>
+      <a href="index.html">volver al incio</a>
+    </div>
+  </body>
+</html>
