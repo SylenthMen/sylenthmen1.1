@@ -94,7 +94,17 @@ footer {
 }
 
 .social-links a:hover {
-    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+
+footer p:hover {
+    color: #2cfcfd;
+    cursor: pointer;
+    transition: .2s;
 }
 
 sup{
