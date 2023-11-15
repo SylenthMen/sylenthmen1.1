@@ -9,12 +9,12 @@ body {
 }
 
 body.dark-mode {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
 }
 
 header {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 1em;
@@ -45,7 +45,7 @@ main {
 
 button {
     padding: 8px 16px;
-    background-color: #333;
+    background-color: #fb203b;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -60,7 +60,7 @@ header a {
 }
 
 header a:hover{
-    background-color: #444;
+    background-color: #000;
     color: #ff00aa;
 }
 
@@ -81,7 +81,7 @@ a:hover {
 /* ... tus estilos existentes ... */
 
 footer {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -110,7 +110,8 @@ footer p:hover {
 sup{
     color: #ff00aa;
     padding: 8px;
-    background-color: #555;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     border-radius: 50px;
     animation: text-shadow 1.5s ease-in-out infinite;
 }
