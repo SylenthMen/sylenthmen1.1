@@ -119,6 +119,11 @@ section {
     padding: 100px;
 }
 
+.acercade {
+    background-color: #222;
+    color: #FFF;
+}
+
 .row {
     position: relative;
     width: 100%;
@@ -132,9 +137,9 @@ section {
 }
 
 .titleText {
-    color: #111;        /*MODIFICACION FUTURA DE COLOR*/
+    color: #fff;        /*MODIFICACION FUTURA DE COLOR*/
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 800;
 }
 
 .row .co150 .imgBx {
@@ -446,7 +451,7 @@ section {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: #fff;
+        background: #fff; /*FUTURA MODIFICACION DEL COLOR BARRA LATERAL*/
     }
     header .barra li {
         list-style: none;
