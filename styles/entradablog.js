@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const entriesData = [
-      { id: 1, title: "Contruccion de este sitio", content: "Contenido de la Entrada 1" },
+      { id: 1, title: "Contruccion de este sitio", content: "Te cuento un poco del como empece con este proyecto." },
       { id: 2, title: "Entrada 2", content: "Contenido de la Entrada 2" },
       { id: 3, title: "Entrada 3", content: "Contenido de la Entrada 3" },
       { id: 4, title: "Entrada 4", content: "Contenido de la Entrada 4" },
