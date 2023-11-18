@@ -263,7 +263,7 @@ section {
 }
 
 .sello .content .box .imgBx:hover img{
-    padding: 30px;
+    scale: 1.2;
     border-radius: 15px;
 }
 
@@ -312,6 +312,7 @@ section {
 
 .gaming .content .box .imgBx:hover img {
     padding-top: 80px;
+    transition: .2s;
     cursor: pointer;
 }
 
