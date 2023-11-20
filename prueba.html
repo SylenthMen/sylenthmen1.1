@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Variables CSS para los colores en modo claro */
+      :root {
+        --light-bg-color: #fff;
+        --light-star-color: #fafd0f;
+        --light-moon-color: #fff;
+        /* Variables CSS para los colores en modo oscuro */
+        --dark-bg-color: #000;
+        --dark-star-color: yellow;
+        --dark-moon-color: #000;
+      }
+
+      /* Reset de la selección de texto */
+      * {
+        user-select: none;
+      }
+
+      /* Configuración de altura del HTML y el body al 100% */
+      html,
+      body {
+        height: 100%;
+      }
+
+      /* Estilos generales del body */
+      body {
+        margin: 0;
+        background-color: var(--light-bg-color);
+        transition: background-color 0.3s ease;
+      }
+
+      /* Input checkbox oculto */
+      #toggle_checkbox {
+        display: none;
+      }
+
+      /* Etiqueta para el toggle switch */
+      label {
+        position: absolute;
+        margin: 50px; /*CAMBIAR PARA LA POSICION QUE QUIERA*/
+        width: 116px;
+        height: 56px;
+        background-color: var(--light-bg-color);
+        border-radius: 56px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: 0.3s ease background-color;
+        overflow: hidden;
+      }
+
+      /* Estilos del botón estrella */
+      #star {
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        width: 30px;
+        height: 30px;
+        background-color: var(--light-star-color);
+        transform: scale(1);
+        border-radius: 50%;
+        transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform,
+          0.3s ease background-color;
+        z-index: 1;
+      }
+
+      /* Posición relativa del primer elemento estrella */
+      #star-1 {
+        position: relative;
+      }
+
+      /* Posición absoluta y rotación del segundo elemento estrella */
+      #star-2 {
+        position: absolute;
+        transform: rotateZ(36deg);
+      }
+
+      /* Estilos del texto estrella */
+      .star {
+        top: 0;
+        left: -7px;
+        font-size: 54px;
+        line-height: 28px;
+        color: var(--light-star-color);
+        transition: 0.3s ease color;
+      }
+
+      /* Estilos de la luna */
+      #moon {
+        position: absolute;
+        bottom: -52px;
+        right: 8px;
+        width: 40px;
+        height: 40px;
+        background-color: var(--light-moon-color);
+        border-radius: 50%;
+        transition: 0.3s ease bottom;
+      }
+
+      /* Estilos del resplandor de la luna */
+      #moon:before {
+        content: "";
+        position: absolute;
+        top: -12px;
+        left: -17px;
+        width: 40px;
+        height: 40px;
+        background-color: #03a9f4;
+        border-radius: 50%;
+        transition: 0.3s ease background-color;
+      }
+
+      /* Estilos para el modo oscuro cuando el checkbox está marcado */
+      #toggle_checkbox:checked + label {
+        background-color: var(--dark-bg-color);
+      }
+
+      #toggle_checkbox:checked + label #star {
+        top: 3px;
+        left: 64px;
+        transform: scale(0.3);
+        background-color: var(--dark-star-color);
+      }
+
+      #toggle_checkbox:checked + label .star {
+        color: var(--dark-star-color);
+      }
+
+      #toggle_checkbox:checked + label #moon {
+        bottom: 8px;
+      }
+
+      #toggle_checkbox:checked + label #moon:before {
+        background-color: var(--dark-moon-color);
+      }
+
+      /* Estilos del cuerpo en modo oscuro */
+      body.dark-mode {
+        background-color: var(--dark-bg-color);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Input checkbox para el modo oscuro -->
+    <input type="checkbox" id="toggle_checkbox" />
+
+    <!-- Etiqueta para el toggle switch -->
+    <label for="toggle_checkbox">
+      <!-- Contenido del toggle switch: estrella y luna -->
+      <div id="star">
+        <div class="star" id="star-1">★</div>
+        <div class="star" id="star-2">★</div>
+      </div>
+      <div id="moon"></div>
+    </label>
+
+    <!-- Script JavaScript para cambiar el modo oscuro -->
+    <script>
+      const checkbox = document.getElementById("toggle_checkbox");
+
+      checkbox.addEventListener("change", () => {
+        document.body.classList.toggle("dark-mode", checkbox.checked);
+      });
+    </script>
+  </body>
+</html>
