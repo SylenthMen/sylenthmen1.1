@@ -15,8 +15,11 @@
 
       gtag("config", "G-QQC4JDJWR8");
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1806372953414484"
-     crossorigin="anonymous"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1806372953414484"
+      crossorigin="anonymous"
+    ></script>
     <meta name="msvalidate.01" content="BFB7E762CC7F57F1BCCBADAD7EC95128" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -83,6 +86,41 @@
             />
           </div>
         </div>
+      </div>
+      <div
+        id="cookieNotice"
+        style="
+          display: none;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+          z-index: 9999;
+        "
+      >
+        <p>
+          Este sitio web utiliza cookies de Google para mejorar tu experiencia
+          de usuario. Al continuar navegando, aceptas el uso de estas cookies.
+          <a href="#" style="color: #fff; text-decoration: underline"
+            >Leer más</a
+          >
+        </p>
+        <button
+          id="acceptCookies"
+          style="
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+          "
+        >
+          Aceptar
+        </button>
       </div>
     </section>
 
@@ -295,18 +333,43 @@
     </div>
 
     <script type="text/JavaScript">
-      window.addEventListener('scroll', function() {
-          const header = document.querySelector('header');
-          header.classList.toggle("sticky", window.scrollY > 0);
-      });
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
 
 
-      function togglMenu(){
-          const menuToggle = document.querySelector('.menuToggle');
-          const barra = document.querySelector('.barra');
-          menuToggle.classList.toggle('active');
-          barra.classList.toggle('active');
+        function togglMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const barra = document.querySelector('.barra');
+            menuToggle.classList.toggle('active');
+            barra.classList.toggle('active');
+        }
+
+        function showCookieNotice() {
+          var cookieNotice = document.getElementById("cookieNotice");
+          cookieNotice.style.display = "block";
       }
+
+      // Función para ocultar el aviso de cookies
+      function hideCookieNotice() {
+          var cookieNotice = document.getElementById("cookieNotice");
+          cookieNotice.style.display = "none";
+      }
+
+      // Verificar si se ha aceptado las cookies previamente
+      var acceptedCookies = localStorage.getItem("acceptedCookies");
+      if (!acceptedCookies) {
+          showCookieNotice();
+      }
+
+      // Agregar evento clic al botón "Aceptar"
+      var acceptCookiesBtn = document.getElementById("acceptCookies");
+      acceptCookiesBtn.addEventListener("click", function() {
+          hideCookieNotice();
+          localStorage.setItem("acceptedCookies", true);
+          // Aquí puedes agregar el código para habilitar las cookies de Google
+      });
     </script>
   </body>
 </html>
